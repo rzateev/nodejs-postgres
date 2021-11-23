@@ -1,0 +1,41 @@
+npm init 
+npm install express pg
+npm install -D nodemon
+
+GRUD
+
+POST 
+http://localhost:8080/api/user
+{
+    "name": "LENA",
+    "surname": "GGGG"
+}
+
+GET
+http://localhost:8080/api/user
+
+GET
+http://localhost:8080/api/user/1
+
+PUT
+http://localhost:8080/api/user
+{
+    "id": "1",
+    "name": "ROMARIO",
+    "surname": "GGGG"
+}
+
+DELETE 
+http://localhost:8080/api/user/1
+
+
+POST
+http://localhost:8080/api/post
+{
+    "title": "Toyota is the best car",
+    "content": "Toyota is the best car forewer",
+    "user_id":2
+}
+
+GET
+http://localhost:8080/api/post?user_id=2
